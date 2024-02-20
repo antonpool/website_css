@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    css
+    темы:
+{% for el in table %}
+    {{ el.name }}
+{% endfor %}
 </body>
 </html>

@@ -1,5 +1,4 @@
 {
-
     "git.autoRepositoryDetection": "subFolders",
     "breadcrumbs.enabled": true,
 
@@ -21,7 +20,7 @@
             "includeAllSymbols": true
         }
     ],
-    
+      
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
@@ -49,6 +48,5 @@
             "comments": true,
             "strings": true
         }
-    },
-    "git.ignoreLimitWarning": true
+    }
 }
