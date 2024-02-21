@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=200)),
                 ('text_all', models.TextField()),
                 ('text_code', models.TextField(blank=True, null=True)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='images/')),
+                ('image', models.ImageField(blank=True, null=True, upload_to='static/img/')),
                 ('date', models.DateTimeField(auto_now=True)),
                 ('slug', models.SlugField(max_length=200)),
             ],

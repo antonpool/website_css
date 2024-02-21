@@ -1,14 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ table.first.name }}</title>
 </head>
 <body>
-    темы:
+    темы: <br>
+    
 {% for el in table %}
-    {{ el.name }}
+
+    {{ el.name }} <br>
+    {{ el.title }} <br>
+    {{ el.text_all }} <br>
+    {{ el.text_code }} <br>
+        {% if el.image  %}
+        <img src="{{ el.image.url }}" alt='картинка' ><br>
+        {% endif %}
+    {{ el.date }} <br>
+    ///____________________________________
 {% endfor %}
 </body>
 </html>

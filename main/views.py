@@ -2,13 +2,9 @@ from django.shortcuts import render
 
 from db.models import Table
 
-# Create your views here.
 def home (request):
-
     table = Table.objects.all()
+    
+    return render (request, 'main/home.html', {'table': table})
 
-    context = {
 
-        'table': table,
-    }
-    return render (request, 'main/home.html', context)
